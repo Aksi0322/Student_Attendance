@@ -42,6 +42,11 @@ export default function Header() {
               FeedBack
             </li>
           </Link>
+          <Link to="/SignIn">
+            <li className="hideen sm:inline text-black cursor-pointer ">
+              Sign In
+            </li>
+          </Link>
         </ul>
       </div>
     </header>

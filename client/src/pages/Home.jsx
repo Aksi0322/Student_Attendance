@@ -1,13 +1,41 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function () {
   return (
-    <article className="text-wrap font-bold">
-      <div class='bg-cover h-screen bg-[url("https://ctexaminer.com/wp-content/uploads/2020/09/AdobeStock_214316329-scaled-1.jpeg")]'>
-        <div className="text-center">
-          <span className="text-black text-lg">Welcome to School Management System</span>
-        </div>
+    <div className="p-3 max-w-lg mx-auto">
+      <h1 className="text-3xl text-center font-semibold my-7 font-sans">
+        Sign Up
+      </h1>
+      <form className="flex flex-col gap-4">
+        <input
+          type="text"
+          placeholder="username"
+          className="border p-3 rounded-lg"
+          id="username"
+        />
+        <input
+          type="text"
+          placeholder="email"
+          className="border p-3 rounded-lg"
+          id="email"
+        />
+        <input
+          type="text"
+          placeholder="password"
+          className="border p-3 rounded-lg"
+          id="password"
+        />
+        <button className="bg-green-500 text-white p-3 rounded-lg uppercase hover:opacity-80 disabled:opacity-70">
+          Sing Up
+        </button>
+      </form>
+      <div className="flex gap-2 mt-5 font-semibold">
+        <p>Have an Account?</p>
+        <Link to={"/SignIn"}>
+        <span className="text-blue-600">Sign In</span>
+        </Link>
       </div>
-    </article>
+    </div>
   );
 }

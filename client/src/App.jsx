@@ -7,6 +7,7 @@ import Feedback from "./pages/Feedback";
 import Staff from "./pages/Staff";
 import Header from "./components/Header";
 import Student from "./pages/Student";
+import SignIn from "./pages/SignIn";
 
 export default function App() {
   return (
@@ -18,7 +19,8 @@ export default function App() {
         <Route path="/Contactus" element={<Contactus />} />
         <Route path="/Feedback" element={<Feedback />} />
         <Route path="/Staff" element={<Staff />} />        
-        <Route path="/Student" element={<Student />} />
+        <Route path="/Student" element={<Student />} />                
+        <Route path="/Signin" element={<SignIn />} />
       </Routes>
     </BrowserRouter>
   );
